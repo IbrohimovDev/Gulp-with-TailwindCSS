@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp with TailwindCSS</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body class="overflow-x-hidden">
+   
+    <section>
+        <header class="relative z-40">
+            <nav class="main-container flex-row justify-between items-center py-6">
+                <div class="flex lg:hidden w-full min-h-screen fixed top-0 left-[-100%] justify-center items-center bg-white z-50 duration-300 mobile-menu">
+                    <ul class="flex flex-col min-h-full select-none mobile_menu">
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Home</a></li>
+                        <li class="menu__item dropdown-toggle cursor-pointer">
+                            <div class="custom-select" style="width:100px;">
+                                <select>
+                                    <option value="0">Advertise</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="menu__item dropdown-toggle cursor-pointer">
+                            <div class="custom-select" style="width:100px;">
+                                <select>
+                                    <option value="0">Supports</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="relative left-0 sm:left-1/2 flex items-center gap-[14px] justify-start sm:translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
+                    <img src="./img/logo.svg" alt="logo img and StartupLanding txt">
+                    <p class="logoName-1 font-bold text-xl text-[#02073E] opacity-80">StartupLanding</p>
+                    <p class="logoName-2 font-bold text-xl text-[#02073E] opacity-80">Startup</p>
+                </div>
+                <div class="w-[400px] hidden lg:block">
+                    <ul class="flex justify-between select-none">
+                        <li class="menu__item">
+                            <a class="menu__link text-blue hover:text-[#8d448b] underline-animation" href="#">Home</a>
+                        </li>
+                        <li class="menu__item dropdown-toggle cursor-pointer">
+                            <div class="custom-select" style="width:100px;">
+                                <select>
+                                    <option value="0">Advertise</option>
+                                    <option value="1">Adver 1</option>
+                                    <option value="2">Adver 2</option>
+                                    <option value="3">Adver 3</option>
+                                    <option value="4">Adver 4</option>
+                                    <option value="5">Adver 5</option>
+                                    <option value="6">Adver 6</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="menu__item dropdown-toggle cursor-pointer">
+                            <div class="custom-select" style="width:100px;">
+                                <select>
+                                    <option value="0">Supports</option>
+                                    <option value="1">Support 1</option>
+                                    <option value="2">Support 2</option>
+                                    <option value="3">Support 3</option>
+                                    <option value="4">Support 4</option>
+                                    <option value="5">Support 5</option>
+                                    <option value="6">Support 6</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link text-blue hover:text-[#8d448b] underline-animation" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn-purple px-[25px] py-[13px] hover:bg-[#8a6289]  hidden lg:block">Register
+                    now</button>
+                <div
+                    class="mobile-burger block lg:hidden relative z-50 right-0 w-6 h-6 bg-cover bg-no-repeat bg-center">
+                </div>
+            </nav>
+        </header>
+        <main></main>
+    </section>
+
+
+    <!-- 4 Boxes -->
+    <section class="flex flex-col items-center">
+        <h3 class="title-lg mb-[10px]">Go Beyond unlimited features</h3>
+        <p class="main-paragraph text-center mb-[90px] max-w-[583px]">Focus only on the meaning we take care of design.
+            As soon as the meeting end you can export with one click into your preferred format.</p>
+        <div class="main-container flex-col lg:flex-row">
+            <div class="w-full lg:w-1/2 flex flex-wrap justify-evenly">
+                <div class="feature-box">
+                    <div class="feature-box__imgBox">
+                        <img src="./img/lamp.svg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-box__imgBox">
+                        <img src="./img/targert.jpg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-wrap justify-evenly">
+                <div class="feature-box">
+                    <div class="feature-box__imgBox">
+                        <img src="./img/rocket.svg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-box__imgBox">
+                        <img src="./img/cup.svg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+</html>
